@@ -9,21 +9,9 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <script>
-      fetch("../html/commons/navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
-    <script src="../index.js"></script>
     <div id="page">
       <div class="image-container">
-        <img
-          src="../images/1.jpg"
-          alt="Mon image"
-          height="600"
-        />
+        <img src="../images/1.jpg" alt="Mon image" height="600" />
         <div class="text-overlay">
           <h1>1. Origine et fondements</h1>
         </div>
@@ -53,8 +41,9 @@
         les acteurs économiques cherchent à s'approprier.
       </p>
     </div>
+    <footer>
+      <p>© 2025 ...</p>
+    </footer>
   </body>
-  <footer>
-    <p>© 2025 ...</p>
-  </footer>
+  <script src="../js/script.js"></script>
 </html>
