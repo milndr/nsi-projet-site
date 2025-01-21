@@ -9,14 +9,6 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <script>
-      fetch("../html/commons/navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
-    <script src="../index.js"></script>
     <div id="page">
       <div class="image-container">
         <img
@@ -100,4 +92,5 @@
       <p>© 2025 ...</p>
     </footer>
   </body>
+  <script src="../js/script.js"></script>
 </html>
