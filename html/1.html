@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("../html/commons/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <script src="../index.js"></script>
+    <div id="page">
+      <div class="image-container">
+        <img
+          src="../images/1.jpg"
+          alt="Mon image"
+          height="600"
+        />
+        <div class="text-overlay">
+          <h1>1. Origine et fondements</h1>
+        </div>
+      </div>
+      <h1></h1>
+      <p>
+        L'économie de l'attention est un concept qui a émergé dans les
+        <strong>années 1990</strong>, alors que l'on constatait une surabondance
+        d'informations et de contenus disponibles, notamment avec l'essor
+        d'Internet. Face à cette profusion, l'attention des individus est
+        devenue une ressource rare et précieuse.
+      </p>
+
+      <p>
+        L'économie de l'attention se fonde sur l'idée que notre capacité à
+        traiter l'information est limitée, alors que l'offre de contenus ne
+        cesse d'augmenter. Les entreprises et les créateurs de contenus en ligne
+        doivent donc se battre pour capter l'attention de leur public, devenu
+        une denrée rare.
+      </p>
+
+      <p>
+        Ce concept a été théorisé par des économistes comme Herbert Simon, qui a
+        souligné que "dans une économie d'abondance d'information, la richesse
+        n'est pas dans l'information elle-même, mais dans l'attention qu'on lui
+        porte". L'attention est donc devenue une nouvelle forme de capital, que
+        les acteurs économiques cherchent à s'approprier.
+      </p>
+    </div>
+  </body>
+  <footer>
+    <p>© 2025 ...</p>
+  </footer>
+</html>

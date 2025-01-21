@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("../html/commons/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <script src="../index.js"></script>
+    <div id="page">
+      <div class="image-container">
+        <img
+          src="../images/2.webp"
+          alt="Mon image"
+          height="600"
+        />
+        <div class="text-overlay">
+          <h1>2. Les objets et outils</h1>
+        </div>
+      </div>
+      <h1></h1>
+      <p>
+        Dans un monde où l'information circule à une vitesse fulgurante,
+        l'économie de l'attention est devenue un concept central. Elle désigne
+        la manière dont l'attention des individus est captée, utilisée et
+        monétisée dans un environnement numérique saturé. Pour naviguer
+        efficacement dans cette nouvelle ère, il est crucial de comprendre les
+        objets et les outils qui façonnent cette économie.
+      </p>
+
+      <p>
+        Les réseaux sociaux, tels que Facebook, Instagram et Twitter, sont des
+        exemples emblématiques d'objets de l'économie de l'attention. Ces
+        plateformes sont conçues pour capter notre attention grâce à des
+        contenus engageants, des notifications constantes et des algorithmes qui
+        personnalisent notre expérience. Elles exploitent notre besoin de
+        connexion et d'information, rendant difficile la déconnexion.
+      </p>
+
+      <p>
+        Les applications mobiles, qu'il s'agisse de divertissement, de jeux ou
+        de productivité, jouent également un rôle clé dans cette économie. Elles
+        exploitent des mécanismes de récompense et des interfaces attrayantes
+        pour maintenir l'engagement des utilisateurs. Chaque notification,
+        chaque mise à jour est pensée pour inciter à l'interaction, créant ainsi
+        un cycle d'attention soutenue.
+      </p>
+
+      <p>
+        De même, les sites web, incluant blogs, sites d'actualités et
+        plateformes de streaming, monétisent l'attention par le biais de
+        publicités, d'abonnements et de contenus sponsorisés. Ces espaces
+        numériques sont conçus pour maximiser le temps passé par les
+        utilisateurs, transformant leur attention en une ressource précieuse
+        pour les entreprises.
+      </p>
+
+      <p>
+        Les algorithmes jouent un rôle fondamental dans cette économie. Ils
+        analysent les comportements des utilisateurs pour proposer des contenus
+        susceptibles de les intéresser, maximisant ainsi le temps passé sur les
+        plateformes. Grâce à ces technologies, les entreprises peuvent affiner
+        leur approche et cibler plus efficacement leur audience.
+      </p>
+
+      <p>
+        Des outils d'analyse comme Google Analytics permettent aux entreprises
+        de mesurer l'engagement des utilisateurs, d'identifier les tendances et
+        d'optimiser leurs stratégies de contenu pour capter davantage
+        l'attention. Ces données sont essentielles pour comprendre ce qui
+        fonctionne et ce qui doit être amélioré.
+      </p>
+
+      <p>
+        Enfin, des techniques de marketing digital telles que le marketing
+        d'influence, le retargeting et le SEO visent à attirer et à retenir
+        l'attention des consommateurs dans un paysage numérique concurrentiel.
+        Ces stratégies sont conçues pour s'assurer que les marques restent
+        présentes dans l'esprit des utilisateurs, même dans un environnement
+        saturé d'informations.
+      </p>
+
+      <p>
+        L'économie de l'attention transforme notre manière de consommer
+        l'information et d'interagir avec le monde numérique. En comprenant les
+        objets et les outils qui la composent, les entreprises et les individus
+        peuvent mieux naviguer dans cet environnement complexe, tout en
+        préservant leur attention et en faisant des choix éclairés. Dans cette
+        ère où l'attention est devenue une ressource précieuse, il est essentiel
+        de rester conscient des dynamiques en jeu et de développer des
+        stratégies adaptées pour en tirer le meilleur parti.
+      </p>
+    </div>
+    <footer>
+      <p>© 2025 ...</p>
+    </footer>
+  </body>
+</html>
