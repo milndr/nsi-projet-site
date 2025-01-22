@@ -2,4 +2,4 @@
 
 ## Problèmes
 
-- [ ] js pour ouvrir/fermer le dropdown
+- [x] js pour ouvrir/fermer le dropdown
