@@ -44,14 +44,13 @@ body {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: var(--margin-small);
   transition: transform 0.1s ease, background-color 0.1s ease;
 }
 
 .news-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .news-image {
