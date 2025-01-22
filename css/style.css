@@ -1,4 +1,4 @@
-/* importation de la police PT Serif pour les articles */
+/* Importation de la police PT Serif pour les articles */
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 
 :root {
@@ -15,100 +15,79 @@
 body {
   padding-top: 60px;
   overflow: auto;
-  color: black;
+  color: var(--text-color);
+  background-color: white;
   margin: 0 auto;
   font-family: Arial, "Times New Roman", sans-serif;
 }
 
-/* style du contenu de la page */
+/* Style du contenu de la page */
 #page {
-  padding: 0 10%; /* Ajuste automatiquement selon la taille de l'écran */
-  max-width: 625px; /* Limite la largeur maximale */
-  margin: 0 auto; /* Centre le contenu */
+  padding: 0 10%;
+  max-width: 625px;
+  margin: 0 auto;
   font-size: 20px;
   font-family: "PT Serif", serif;
-
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-/* ======================== BOITE DES PARTIES ============================ */
-
+/* Boite des parties */
 .news-box {
   border: 1px solid #ccc;
   padding: var(--margin-small);
   text-align: center;
+  height: 400px;
+  width: 400px;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: var(
-    --margin-small
-  ); /* Ajout d'espacement entre les news-box */
-  transition: transform 0.1s ease;
+  margin-bottom: var(--margin-small);
+  transition: transform 0.1s ease, background-color 0.1s ease;
 }
-
-/* .news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-} */
 
 .news-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
 }
 
 .news-image {
-  height:150px;
+  height: 150px;
   border-radius: 10px;
-}
-
-.news-box {
-  margin-right: 20px;
-  width: 400px;
-  height: 400px;
-  flex: 0 0 calc(50% - 10px);
-  margin-bottom: var(--margin-small); /* Espacement entre les lignes */
+  object-fit: cover;
 }
 
 .news-box:hover {
   background-color: #f5f5f5;
-  transition: background-color 0.1s ease, color 0.1s ease;
   transform: scale(1.02);
 }
 
-/* Combine les transitions similaires */
-.news-box:hover,
-.read-more:hover {
-  transition: background-color 0.1s ease, color 0.1s ease;
-}
-
+/* Bouton "Lire la suite" */
 .read-more {
   display: inline-block;
   margin-top: 10px;
   color: dodgerblue;
   text-decoration: none;
+  transition: color 0.1s ease;
 }
 
-/* souligne lire la suite quand on passe dessu */
 .read-more:hover {
   text-decoration: underline;
   color: royalblue;
 }
 
-/* effet de l'image et du rectangle blanc avec le titre dessus */
+/* Effet de l'image et du rectangle blanc avec le titre dessus */
 .image-container {
   position: relative;
   display: block;
+  border-radius: 10px;
   margin-top: var(--margin-large);
 }
 
 .text-overlay {
-  margin-top: var(--margin-small);
   position: absolute;
   top: 92%;
   left: 50%;
@@ -116,8 +95,8 @@ body {
   background-color: white;
   padding: 10px;
   text-align: center;
-  box-sizing: border-box;
   width: 80%;
+  box-sizing: border-box;
 }
 
 .text-overlay h3,
@@ -126,9 +105,7 @@ body {
   padding: 0;
 }
 
-/* ============================= Bas de page ============================== */
-
-/* infos de bas de page */
+/* Bas de page */
 footer {
   background-color: #333;
   color: #fff;
@@ -143,11 +120,19 @@ footer p {
 
 /* Amélioration pour la navigation mobile */
 @media (max-width: 768px) {
-  .topnav a,
-  .dropdown .dropbtn {
-    display: none;
+  #page {
+    padding: 0 5%;
+    font-size: 18px;
   }
-  .topnav .icon {
-    display: block;
+
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .text-overlay {
+    width: 90%;
   }
 }
+
+

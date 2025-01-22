@@ -1,4 +1,6 @@
-// Charger le contenu de la navbar depuis navbar.html
+// ================================ Barre de Navigation ================================
+
+// Charge le contenu de la navbar depuis navbar.html
 fetch("/html/commons/navbar.html")
   .then((response) => {
     if (!response.ok) {
@@ -15,6 +17,8 @@ fetch("/html/commons/navbar.html")
   .catch((error) => {
     console.error("Erreur : ", error);
   });
+
+// ================================ Menu Déroulant ================================
 
 // défini le comportement du menu déroulant
 function initializeDropdown() {
